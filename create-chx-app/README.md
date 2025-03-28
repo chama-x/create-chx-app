@@ -1,12 +1,18 @@
-# create-chx-app
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=300&text=create-chx-app&color=0:6366F1,50:4F46E5,100:4338CA&fontColor=ffffff&fontSize=60&desc=Modern%20React%20Template%20Generator&descAlignY=65&animation=fadeIn">
 
-![npm](https://img.shields.io/npm/v/create-chx-app)
-![npm](https://img.shields.io/npm/dm/create-chx-app)
-![GitHub](https://img.shields.io/github/license/chama-x/create-chx-app)
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Montserrat&weight=600&duration=4002&pause=1000&color=6366F1&width=435&separator=%3C&lines=React+%C3%97+TypeScript+%3D+Modern%20Development%3CI+don%E2%80%99t+just+create+templates;%3CI+elevate+development+experience.%3C%3CLet%E2%80%99s+create+beautiful+apps+together.+%E2%9C%A8" alt="Typing SVG" /></a>
+
+  <p>
+    <img src="https://img.shields.io/npm/v/create-chx-app?style=for-the-badge&color=6366F1" alt="npm version">
+    <img src="https://img.shields.io/npm/dm/create-chx-app?style=for-the-badge&color=4F46E5" alt="npm downloads">
+    <img src="https://img.shields.io/github/license/chama-x/create-chx-app?style=for-the-badge&color=4338CA" alt="license">
+  </p>
+</div>
 
 A lightweight, developer-friendly React template with modern UI components, animations, and TypeScript support.
 
-## Features
+## ✨ Features
 
 - 🚀 **Modern React Stack**: React 18.3, TypeScript 5.6, Vite 6
 - ⚡ **Lightning Fast**: Optimized development experience
@@ -21,7 +27,7 @@ A lightweight, developer-friendly React template with modern UI components, anim
 - 🌑 **Dark Mode**: Built-in dark mode support
 - 🔍 **SEO Ready**: Document head management with Helmet
 
-## Quick Start
+## 🚀 Quick Start
 
 ```bash
 # Create a new project
@@ -37,7 +43,7 @@ npm install
 npm run dev
 ```
 
-## Available Scripts
+## 📝 Available Scripts
 
 - `npm run dev` - Start the development server
 - `npm run build` - Build for production
@@ -46,7 +52,7 @@ npm run dev
 - `npm run lint` - Lint code
 - `npm run format` - Format code with Prettier
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 my-app/
@@ -74,16 +80,16 @@ my-app/
 └── vite.config.ts     # Vite configuration
 ```
 
-## UI Components
+## 🎨 UI Components
 
-- Buttons (with variants)
-- Cards (standard, floating, breathing)
-- Form elements
-- Navigation components
-- Interactive animations
-- And many more!
+- **Buttons**: Standard, outline, glass, with variants
+- **Cards**: Standard, floating, breathing, depth
+- **Form Elements**: Inputs, selects, checkboxes, radios
+- **Navigation**: Navbar, sidebar, tabs
+- **Interactive Animations**: Hover effects, transitions, reveals
+- **And many more!**
 
-## Recent Updates
+## 📦 Recent Updates
 
 ### v1.0.16 (2024-06-12)
 
@@ -102,6 +108,17 @@ my-app/
 
 See [CHANGELOG.md](./CHANGELOG.md) for the full history of changes.
 
-## License
+<div style="background: linear-gradient(45deg, #6366F1, #4338CA); padding: 3px; border-radius: 20px; margin: 30px 0; box-shadow: 0 4px 15px rgba(99, 102, 241, 0.2);">
+    <div style="background: #1a1b27; padding: 30px; border-radius: 18px; border: 1px solid rgba(99, 102, 241, 0.1);">
+        <div align="center">
+            <p style="color: #ffffff; font-size: 16px; margin-bottom: 20px; text-shadow: 0 0 20px rgba(99, 102, 241, 0.3);">Let's create beautiful React apps together:</p>
+            <a href="mailto:chama@cortana.lk" style="font-size: 20px; text-decoration: none; color: #6366F1; border-bottom: 1px dotted #6366F1;">chama@cortana.lk</a><br><br>
+            <a href="https://www.linkedin.com/in/chamath-thiwanka/" style="font-size: 20px; text-decoration: none; color: #6366F1; border-bottom: 1px dotted #6366F1;">LinkedIn</a><br><br>
+            <a href="https://twitter.com/chama_x" style="font-size: 20px; text-decoration: none; color: #6366F1; border-bottom: 1px dotted #6366F1;">Twitter</a><br>
+        </div>
+    </div>
+</div>
+
+## 📄 License
 
 MIT © [Chamath Thiwanka (@chama-x)](https://github.com/chama-x)
