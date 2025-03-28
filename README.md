@@ -12,6 +12,9 @@
 
 A lightweight, developer-friendly React template with modern UI components, animations, and TypeScript support.
 
+![CHX-BANNERX](https://github.com/user-attachments/assets/eba6d5cf-2a81-4bfd-9038-cf0cf488b5d5)
+
+
 ## ✨ Features
 
 - 🚀 **Modern React Stack**: React 18.3, TypeScript 5.6, Vite 6
