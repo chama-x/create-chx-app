@@ -18,7 +18,7 @@ This repository has a dual structure that serves two purposes:
 │   ├── CHANGELOG.md               # Version history
 │   └── RELEASE-*.md               # Release notes for specific versions
 │
-└── *                              # Development/testing environment files
+└── *                              # Development environment files (package.json, src/, etc.)
 ```
 
 ## Project Components
@@ -44,7 +44,9 @@ This directory contains the actual React template that gets installed when users
 The root directory contains a working copy of the template for development and testing purposes:
 
 - Used for testing changes before they are added to the template
+- Has its own `package.json` with the name "chx-template-dev"
 - Not part of the npm package
+- Allows you to run `npm run dev` to test changes locally
 
 ## Deployment Strategy
 
@@ -55,18 +57,26 @@ The `create-chx-app/template/` directory is configured for deployment to Netlify
 1. The `netlify.toml` file in the template directory contains the build configuration
 2. It uses `--legacy-peer-deps` to handle any dependency conflicts
 3. It sets up proper redirects for client-side routing
+4. **Important**: In Netlify, you must set the base directory to `create-chx-app/template`
 
 ### NPM Package Publishing
 
 The entire `create-chx-app/` directory is published to npm:
 
-1. Run `npm version patch` to bump the version
-2. Run `npm publish` to publish the package
-3. Users can then use it via `npx create-chx-app my-app`
+1. Run `cd create-chx-app` to navigate to the package directory
+2. Run `npm version patch` to bump the version
+3. Run `npm publish` to publish the package
+4. Users can then use it via `npx create-chx-app my-app`
 
 ## Development Workflow
 
-1. Make changes to the root project to test functionality
+1. Make changes to the root project using `npm run dev` to test functionality
 2. Once satisfied, copy the changes to `create-chx-app/template/`
 3. Update version numbers and create release notes
-4. Publish to npm and push to GitHub 
+4. Publish to npm and push to GitHub
+
+## Common Issues
+
+### Missing package.json in Root Directory
+
+If you see an error like `npm error path /path/to/project/package.json` when running commands in the root directory, it means the root `package.json` file is missing. This file is necessary for the development environment but is not part of the npm package.
