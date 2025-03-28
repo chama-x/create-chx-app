@@ -1,76 +1,124 @@
-# CHX React Template
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=300&text=create-chx-app&color=0:6366F1,50:4F46E5,100:4338CA&fontColor=ffffff&fontSize=60&desc=Modern%20React%20Template%20Generator&descAlignY=65&animation=fadeIn">
 
-A flexible, developer-friendly React template with modern UI components, animations, and TypeScript support.
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Montserrat&weight=600&duration=4002&pause=1000&color=6366F1&width=435&separator=%3C&lines=React+%C3%97+TypeScript+%3D+Modern%20Development%3CI+don%E2%80%99t+just+create+templates;%3CI+elevate+development+experience.%3C%3CLet%E2%80%99s+create+beautiful+apps+together.+%E2%9C%A8" alt="Typing SVG" /></a>
 
-## Features
+  <p>
+    <img src="https://img.shields.io/npm/v/create-chx-app?style=for-the-badge&color=6366F1" alt="npm version">
+    <img src="https://img.shields.io/npm/dm/create-chx-app?style=for-the-badge&color=4F46E5" alt="npm downloads">
+    <img src="https://img.shields.io/github/license/chama-x/create-chx-app?style=for-the-badge&color=4338CA" alt="license">
+  </p>
+</div>
 
-- 🔄 Modern React with TypeScript
-- ⚡ Vite for fast development and building
-- 🎨 TailwindCSS for styling
-- 📊 React Query for data fetching
-- 🧩 Zustand for state management
-- 📝 React Hook Form with Zod validation
-- 🧪 Vitest for testing
-- 📱 PWA support
-- 🔍 TypeScript strict mode
-- 🛠️ ESLint and Prettier for code quality
+A lightweight, developer-friendly React template with modern UI components, animations, and TypeScript support.
 
-## Getting Started
+## ✨ Features
 
-### Installation
+- 🚀 **Modern React Stack**: React 18.3, TypeScript 5.6, Vite 6
+- ⚡ **Lightning Fast**: Optimized development experience
+- 🎨 **Beautiful UI**: Ready-to-use UI components and animations
+- 🛠️ **Zero Config**: Get started in seconds
+- 📱 **Responsive**: Mobile-first design principles
+- 🔄 **State Management**: Built-in Zustand integration
+- 🔍 **Data Fetching**: React Query for powerful async state
+- 🎭 **Form Handling**: React Hook Form with Zod validation
+- 🧪 **Testing Ready**: Vitest and Testing Library setup
+- 🎯 **TypeScript**: Full type safety
+- 🌑 **Dark Mode**: Built-in dark mode support
+- 🔍 **SEO Ready**: Document head management with Helmet
 
-Due to some package dependency conflicts with the latest versions of ESLint and TypeScript, you need to use the `--legacy-peer-deps` flag when installing dependencies:
+## 🚀 Quick Start
 
 ```bash
+# Create a new project
+npx create-chx-app my-app
+
+# Change to the project directory
+cd my-app
+
 # Install dependencies
-npm install --legacy-peer-deps
+npm install
 
-# Start development server
+# Start the development server
 npm run dev
-
-# Build for production
-npm run build
-
-# Run tests
-npm run test
 ```
 
-## Component Showcase
+## 📝 Available Scripts
 
-The template includes a component showcase page at `/components` where you can view and interact with all the available UI components.
+- `npm run dev` - Start the development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run test` - Run tests
+- `npm run lint` - Lint code
+- `npm run format` - Format code with Prettier
 
-## Project Structure
+## 📁 Project Structure
 
 ```
-src/
-├── assets/        # Static assets like images, fonts
-├── components/    # Reusable UI components
-│   ├── Examples/  # Example implementations
-│   ├── Form/      # Form-related components
-│   └── UI/        # UI components like Button, Card, etc.
-├── contexts/      # React context providers
-├── hooks/         # Custom React hooks
-├── layouts/       # Page layouts and templates
-├── pages/         # Route-based page components
-├── services/      # API services and external integrations
-├── stores/        # State management (Zustand stores)
-├── types/         # TypeScript type definitions
-└── utils/         # Utility functions
+my-app/
+├── public/            # Static assets
+├── src/
+│   ├── assets/        # Images, fonts, etc.
+│   ├── components/    # Reusable components
+│   │   ├── ui/        # UI components
+│   │   └── ...
+│   ├── contexts/      # React contexts
+│   ├── hooks/         # Custom hooks
+│   ├── layouts/       # Layout components
+│   ├── pages/         # Page components
+│   ├── services/      # API services
+│   ├── stores/        # Zustand stores
+│   ├── types/         # TypeScript types
+│   ├── utils/         # Utility functions
+│   ├── App.tsx        # App component
+│   ├── main.tsx       # Entry point
+│   └── ...
+├── .eslintrc.js       # ESLint configuration
+├── index.html         # HTML template
+├── package.json       # Project dependencies
+├── tsconfig.json      # TypeScript configuration
+└── vite.config.ts     # Vite configuration
 ```
 
-## Notable Dependencies
+## 🎨 UI Components
 
-- **React**: v18.3.1
-- **React Router**: v6.22.1
-- **TailwindCSS**: v3.4.1
-- **React Query**: v5.17.19
-- **Zustand**: v4.5.0
-- **React Hook Form**: v7.50.1
-- **Zod**: v3.22.4
-- **Axios**: v1.6.7
-- **Vitest**: v1.2.2
-- **TypeScript**: v5.6.2
+- **Buttons**: Standard, outline, glass, with variants
+- **Cards**: Standard, floating, breathing, depth
+- **Form Elements**: Inputs, selects, checkboxes, radios
+- **Navigation**: Navbar, sidebar, tabs
+- **Interactive Animations**: Hover effects, transitions, reveals
+- **And many more!**
 
-## License
+## 📦 Recent Updates
 
-MIT
+### v1.0.16 (2024-06-12)
+
+- Fixed CSS animation references for better stability
+- Improved animation behavior
+
+### v1.0.15 (2024-06-11)
+
+- Fixed CSS syntax errors in animations
+- Enhanced startup reliability
+
+### v1.0.14 (2024-06-10)
+
+- Added missing dependencies for full functionality
+- Fixed dependency conflicts
+
+See [CHANGELOG.md](./CHANGELOG.md) for the full history of changes.
+
+<div style="background: linear-gradient(45deg, #6366F1, #4338CA); padding: 3px; border-radius: 20px; margin: 30px 0; box-shadow: 0 4px 15px rgba(99, 102, 241, 0.2);">
+    <div style="background: #1a1b27; padding: 30px; border-radius: 18px; border: 1px solid rgba(99, 102, 241, 0.1);">
+        <div align="center">
+            <p style="color: #ffffff; font-size: 16px; margin-bottom: 20px; text-shadow: 0 0 20px rgba(99, 102, 241, 0.3);">Let's create beautiful React apps together:</p>
+            <a href="mailto:chama@cortana.lk" style="font-size: 20px; text-decoration: none; color: #6366F1; border-bottom: 1px dotted #6366F1;">chama@cortana.lk</a><br><br>
+            <a href="https://www.linkedin.com/in/chamath-thiwanka/" style="font-size: 20px; text-decoration: none; color: #6366F1; border-bottom: 1px dotted #6366F1;">LinkedIn</a><br><br>
+            <a href="https://twitter.com/chama_x" style="font-size: 20px; text-decoration: none; color: #6366F1; border-bottom: 1px dotted #6366F1;">Twitter</a><br>
+        </div>
+    </div>
+</div>
+
+## 📄 License
+
+MIT © [Chamath Thiwanka (@chama-x)](https://github.com/chama-x)
