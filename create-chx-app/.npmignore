@@ -21,4 +21,4 @@ test
 .npmrc
 
 # Scripts
-scripts/ 
+scripts/ HUSKY=0

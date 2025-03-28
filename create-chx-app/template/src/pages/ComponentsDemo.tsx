@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { LoginForm } from '@/components/Examples/LoginForm';
-import { Button } from '@/components/UI/Button';
+import { Button } from '@/components/Button';
 import { useState } from 'react';
 
 interface DemoSection {
