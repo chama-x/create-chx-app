@@ -20,48 +20,57 @@
   }
 
   body {
-    @apply bg-white dark:bg-ch-x-900 min-h-screen transition-colors;
+    @apply min-h-screen bg-white transition-colors dark:bg-ch-x-900;
     transition-duration: 300ms;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-medium leading-tight tracking-tight text-gray-900 dark:text-white;
   }
 
   h1 {
-    @apply text-4xl lg:text-5xl mb-4;
+    @apply mb-4 text-4xl lg:text-5xl;
   }
 
   h2 {
-    @apply text-3xl lg:text-4xl mb-3;
+    @apply mb-3 text-3xl lg:text-4xl;
   }
 
   h3 {
-    @apply text-2xl lg:text-3xl mb-2;
+    @apply mb-2 text-2xl lg:text-3xl;
   }
 
   h4 {
-    @apply text-xl lg:text-2xl mb-2;
+    @apply mb-2 text-xl lg:text-2xl;
   }
 
   h5 {
-    @apply text-lg lg:text-xl mb-2;
+    @apply mb-2 text-lg lg:text-xl;
   }
 
   h6 {
-    @apply text-base lg:text-lg mb-2;
+    @apply mb-2 text-base lg:text-lg;
   }
 
   p {
-    @apply mb-4 text-gray-700 dark:text-gray-300 leading-relaxed;
+    @apply mb-4 leading-relaxed text-gray-700 dark:text-gray-300;
   }
 
   a {
-    @apply text-ch-accent-600 hover:text-ch-accent-700 dark:text-ch-accent-400 dark:hover:text-ch-accent-300 transition duration-200;
+    @apply text-ch-accent-600 transition duration-200 hover:text-ch-accent-700 dark:text-ch-accent-400 dark:hover:text-ch-accent-300;
   }
 
   /* Adding subtle animation to many interactive elements by default */
-  button, a, input, select, textarea {
+  button,
+  a,
+  input,
+  select,
+  textarea {
     @apply transition-all duration-200;
   }
 
@@ -81,7 +90,7 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-gray-300 dark:bg-ch-x-700 rounded-full hover:bg-gray-400 dark:hover:bg-ch-x-600 transition-colors;
+    @apply rounded-full bg-gray-300 transition-colors hover:bg-gray-400 dark:bg-ch-x-700 dark:hover:bg-ch-x-600;
     border: 2px solid transparent;
     background-clip: content-box;
   }
@@ -90,16 +99,16 @@
 @layer components {
   /* Enhanced buttons */
   .btn {
-    @apply inline-flex items-center justify-center font-medium rounded-lg transition-all focus:outline-none focus:ring-2 focus:ring-opacity-50 active:scale-[0.98] transform;
+    @apply inline-flex transform items-center justify-center rounded-lg font-medium transition-all focus:outline-none focus:ring-2 focus:ring-opacity-50 active:scale-[0.98];
     transition-duration: 200ms;
   }
 
   .btn-primary {
-    @apply btn bg-ch-accent-600 text-white hover:bg-ch-accent-700 focus:ring-ch-accent-500 shadow-sm dark:shadow-none;
+    @apply btn bg-ch-accent-600 text-white shadow-sm hover:bg-ch-accent-700 focus:ring-ch-accent-500 dark:shadow-none;
   }
 
   .btn-secondary {
-    @apply btn bg-gray-100 hover:bg-gray-200 text-gray-800 dark:bg-ch-x-800 dark:hover:bg-ch-x-700 dark:text-white shadow-sm dark:shadow-none;
+    @apply btn bg-gray-100 text-gray-800 shadow-sm hover:bg-gray-200 dark:bg-ch-x-800 dark:text-white dark:shadow-none dark:hover:bg-ch-x-700;
   }
 
   .btn-outline {
@@ -107,32 +116,32 @@
   }
 
   .btn-glass {
-    @apply btn backdrop-blur-md bg-white/10 dark:bg-black/10 border border-white/20 dark:border-white/10 text-gray-800 dark:text-white shadow-sm hover:shadow hover:bg-white/20 dark:hover:bg-black/20;
+    @apply btn border border-white/20 bg-white/10 text-gray-800 shadow-sm backdrop-blur-md hover:bg-white/20 hover:shadow dark:border-white/10 dark:bg-black/10 dark:text-white dark:hover:bg-black/20;
   }
 
   /* Enhanced inputs */
   .input {
-    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-ch-accent-500 focus:border-transparent dark:bg-ch-x-800 dark:border-ch-x-700 dark:text-white transition-all;
+    @apply w-full rounded-lg border border-gray-300 px-3 py-2 transition-all focus:border-transparent focus:outline-none focus:ring-2 focus:ring-ch-accent-500 dark:border-ch-x-700 dark:bg-ch-x-800 dark:text-white;
   }
 
   /* Card with subtle hover effects */
   .card {
-    @apply bg-white dark:bg-ch-x-800 rounded-lg shadow-sm dark:shadow-ch-x-dark overflow-hidden transition-all duration-300 hover:shadow-md dark:border dark:border-ch-x-700;
+    @apply overflow-hidden rounded-lg bg-white shadow-sm transition-all duration-300 hover:shadow-md dark:border dark:border-ch-x-700 dark:bg-ch-x-800 dark:shadow-ch-x-dark;
   }
 
   /* Glass effect components */
   .glass {
-    @apply bg-white/70 dark:bg-ch-x-900/70 backdrop-blur-lg rounded-xl border border-white/20 dark:border-white/10 shadow-glass dark:shadow-glass-dark;
+    @apply rounded-xl border border-white/20 bg-white/70 shadow-glass backdrop-blur-lg dark:border-white/10 dark:bg-ch-x-900/70 dark:shadow-glass-dark;
   }
 
   /* Neuomorphic components */
   .neu {
-    @apply bg-gray-100 dark:bg-ch-x-800 rounded-xl shadow-neu-light dark:shadow-neu-dark;
+    @apply rounded-xl bg-gray-100 shadow-neu-light dark:bg-ch-x-800 dark:shadow-neu-dark;
   }
 
   /* CH-X branded components */
   .container-x {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
   }
 
   .section-x {
@@ -140,35 +149,36 @@
   }
 
   .heading-x {
-    @apply font-medium text-2xl md:text-3xl lg:text-4xl leading-tight dark:text-white tracking-tight;
+    @apply text-2xl font-medium leading-tight tracking-tight dark:text-white md:text-3xl lg:text-4xl;
   }
 
   .subheading-x {
-    @apply text-lg md:text-xl text-gray-600 dark:text-gray-400 mt-4 leading-relaxed;
+    @apply mt-4 text-lg leading-relaxed text-gray-600 dark:text-gray-400 md:text-xl;
   }
 
   .gradient-text-x {
-    @apply bg-gradient-to-r from-ch-accent-500 to-ch-accent-700 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto];
+    @apply bg-gradient-to-r from-ch-accent-500 to-ch-accent-700 bg-[length:200%_auto] bg-clip-text text-transparent;
+    animation: shimmer 2s linear infinite;
   }
 
   .button-x {
-    @apply inline-flex items-center justify-center px-5 py-3 rounded-lg font-medium bg-ch-x-gradient hover:bg-ch-x-gradient-hover text-white shadow-ch-x transition-all active:scale-[0.98] transform;
+    @apply inline-flex transform items-center justify-center rounded-lg bg-ch-x-gradient px-5 py-3 font-medium text-white shadow-ch-x transition-all hover:bg-ch-x-gradient-hover active:scale-[0.98];
     transition-duration: 200ms;
   }
 
   .card-x {
-    @apply p-6 rounded-xl bg-white dark:bg-ch-x-800 shadow-lg border border-gray-100 dark:border-ch-x-700 hover:shadow-xl dark:shadow-ch-x-dark transition-all;
+    @apply rounded-xl border border-gray-100 bg-white p-6 shadow-lg transition-all hover:shadow-xl dark:border-ch-x-700 dark:bg-ch-x-800 dark:shadow-ch-x-dark;
     transition-duration: 200ms;
   }
 
   .input-x {
-    @apply w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-ch-x-700 bg-white dark:bg-ch-x-800 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-ch-accent-500 transition-all;
+    @apply w-full rounded-lg border border-gray-200 bg-white px-4 py-3 text-gray-900 placeholder-gray-400 transition-all focus:outline-none focus:ring-2 focus:ring-ch-accent-500 dark:border-ch-x-700 dark:bg-ch-x-800 dark:text-white dark:placeholder-gray-500;
     transition-duration: 200ms;
   }
 
   /* New fluid animations and transitions helpers */
   .float-element {
-    @apply animate-float;
+    animation: float 6s ease-in-out infinite;
   }
 
   .hover-scale {
@@ -191,7 +201,7 @@
   }
 
   .slide-up {
-    @apply animate-slide-up;
+    @apply animate-slide-in-up;
   }
 
   .slide-in-right {
@@ -258,9 +268,10 @@
   100% {
     opacity: 0;
     transform: translate(
-      calc(-50% + var(--x-distance, 70px) * cos(var(--angle, 45deg))),
-      calc(-50% + var(--y-distance, 70px) * sin(var(--angle, 45deg)))
-    ) scale(1);
+        calc(-50% + var(--x-distance, 70px)),
+        calc(-50% + var(--y-distance, 70px))
+      )
+      scale(1);
   }
 }
 
@@ -276,7 +287,8 @@
 
 /* Breathing animation for cards and important UI elements */
 @keyframes breathe {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -383,7 +395,8 @@
 
 /* Pulse effect for attention-grabbing elements */
 @keyframes subtle-pulse {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.4);
   }
   50% {
@@ -397,7 +410,8 @@
 
 /* Soft float animation for primary elements */
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -411,14 +425,16 @@
 
 /* Scroll indicator animation */
 @keyframes pulse-down {
-  0%, 20% {
+  0%,
+  20% {
     transform: translateY(0);
     opacity: 0;
   }
   40% {
     opacity: 1;
   }
-  80%, 100% {
+  80%,
+  100% {
     transform: translateY(8px);
     opacity: 0;
   }
@@ -430,7 +446,8 @@
 
 /* Blob animations for 404 page */
 @keyframes blob {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(0, 0) scale(1);
   }
   25% {
