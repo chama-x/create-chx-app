@@ -99,3 +99,14 @@ All notable changes to create-chx-app will be documented in this file.
 - Numerous UI components and animations
 - Complete TypeScript support
 - Fast development server setup
+
+## 1.0.20 (March 29, 2025)
+
+- Fixed incorrect Button import paths
+- Fixed build issues on Netlify
+- Path fixes in ComponentsDemo.tsx and LoginForm.tsx
+
+## 1.0.19 (March 29, 2025)
+
+- Fixed additional Button import paths
+- Published package with corrected import paths
