@@ -1,6 +1,6 @@
 {
   "name": "create-chx-app",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "A flexible, developer-friendly React template with modern UI components, animations, and TypeScript support",
   "main": "index.js",
   "type": "module",
