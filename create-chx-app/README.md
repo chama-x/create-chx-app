@@ -122,3 +122,24 @@ See [CHANGELOG.md](./CHANGELOG.md) for the full history of changes.
 ## 📄 License
 
 MIT © [Chamath Thiwanka (@chama-x)](https://github.com/chama-x)
+
+## Repository Structure
+
+This project is structured to separate the npm package from development files:
+
+- **`create-chx-app/`**: Contains the npm package and template
+- **Repository root**: Development environment for testing
+
+See [STRUCTURE.md](./STRUCTURE.md) for detailed information about project organization.
+
+## Deployment
+
+### Netlify Deployment
+
+The template directory is configured for deployment on Netlify. To deploy:
+
+1. Connect your GitHub repository to Netlify
+2. Set base directory to `create-chx-app/template`
+3. The included `netlify.toml` will handle the build configuration
+
+Demo: [https://create-chx-app.netlify.app](https://create-chx-app.netlify.app)
