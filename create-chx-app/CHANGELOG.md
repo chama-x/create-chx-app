@@ -100,6 +100,12 @@ All notable changes to create-chx-app will be documented in this file.
 - Complete TypeScript support
 - Fast development server setup
 
+## 1.0.21 (March 29, 2025)
+
+- Added missing framer-motion dependency
+- Fixed Netlify build errors
+- Ensured proper bundling of vendor dependencies
+
 ## 1.0.20 (March 29, 2025)
 
 - Fixed incorrect Button import paths
