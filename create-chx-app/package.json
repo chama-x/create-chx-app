@@ -1,0 +1,40 @@
+{
+  "name": "create-chx-app",
+  "version": "1.0.13",
+  "description": "A flexible, developer-friendly React template with modern UI components, animations, and TypeScript support",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "create-chx-app": "./index.js"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chama-x/create-chx-app"
+  },
+  "keywords": [
+    "react",
+    "template",
+    "vite",
+    "typescript",
+    "tailwindcss",
+    "zustand",
+    "react-query",
+    "react-hook-form",
+    "zod"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "fs-extra": "^11.2.0",
+    "prompts": "^2.4.2"
+  },
+  "files": [
+    "index.js",
+    "template"
+  ]
+}
