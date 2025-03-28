@@ -1,11 +1,11 @@
 {
-  "name": "create-chx-app",
+  "name": "@chama-x/create-chx-app",
   "version": "1.0.21",
   "description": "A CLI tool to create a modern React application with a carefully selected tech stack",
   "main": "index.js",
   "type": "module",
   "bin": {
-    "create-chx-app": "index.js"
+    "create-chx-app": "./index.js"
   },
   "engines": {
     "node": ">=16.0.0"
@@ -26,10 +26,12 @@
     "zod"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/chama-x"
+    "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish-npm": "npm publish --registry https://registry.npmjs.org/",
+    "publish-github": "npm publish --registry https://npm.pkg.github.com/"
   },
   "author": "Chamath Thiwanka",
   "license": "MIT",
