@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import { Input } from '../Form/Input';
-import { Button } from '../UI/Button';
+import { Button } from '../Button';
 import { useZodForm } from '@/hooks/useZodForm';
 import toast from 'react-hot-toast';
 import { useState } from 'react';
