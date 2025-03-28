@@ -1,20 +1,25 @@
 {
-  "name": "chx-template-dev",
-  "private": true,
-  "version": "1.0.0",
-  "description": "Development environment for create-chx-app template",
+  "name": "@chama-x/create-chx-app",
+  "version": "1.0.21",
+  "description": "A CLI tool to create a modern React application with a carefully selected tech stack",
+  "main": "index.js",
   "type": "module",
+  "bin": {
+    "create-chx-app": "./index.js"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc --incremental --tsBuildInfoFile ./node_modules/.tmp/tsbuildinfo && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md}'",
-    "test": "vitest run",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "analyze": "vite build --mode analyze",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "publish-npm": "npm publish --registry https://registry.npmjs.org/",
+    "publish-github": "npm publish --registry https://npm.pkg.github.com/"
   },
   "dependencies": {
     "@react-spring/web": "9.7.3",
@@ -31,7 +36,11 @@
     "react-router-dom": "6.22.1",
     "web-vitals": "3.5.2",
     "zod": "3.22.4",
-    "zustand": "4.5.0"
+    "zustand": "4.5.0",
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^9.2.12"
   },
   "devDependencies": {
     "@babel/core": "7.23.7",
@@ -45,8 +54,8 @@
     "@types/node": "20.11.5",
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
-    "@typescript-eslint/eslint-plugin": "7.18.0",
-    "@typescript-eslint/parser": "7.18.0",
+    "@typescript-eslint/eslint-plugin": "6.19.0",
+    "@typescript-eslint/parser": "6.19.0",
     "@vitejs/plugin-react": "4.2.1",
     "autoprefixer": "10.4.17",
     "eslint": "8.56.0",
@@ -90,5 +99,29 @@
   },
   "engines": {
     "node": ">=16.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chama-x/create-chx-app.git"
+  },
+  "keywords": [
+    "react",
+    "template",
+    "vite",
+    "typescript",
+    "tailwindcss",
+    "zustand",
+    "react-query",
+    "react-hook-form",
+    "zod"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "author": "Chamath Thiwanka",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "template"
+  ]
 }
