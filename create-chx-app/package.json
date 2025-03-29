@@ -1,6 +1,6 @@
 {
   "name": "@chama-x/create-chx-app",
-  "version": "1.0.23",
+  "version": "1.0.25",
   "description": "A CLI tool to create a modern React application with a carefully selected tech stack",
   "main": "index.js",
   "type": "module",

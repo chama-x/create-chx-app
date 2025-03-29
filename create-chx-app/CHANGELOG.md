@@ -2,6 +2,23 @@
 
 All notable changes to create-chx-app will be documented in this file.
 
+## [1.0.25] - 2024-06-14
+
+### Security
+
+- Fixed security vulnerabilities identified in npm audit:
+  - Updated axios to 1.8.4 (SSRF vulnerability)
+  - Updated vite to 6.2.3 (major version upgrade for esbuild vulnerability)
+  - Updated vitest to 3.0.9 (major version upgrade for Remote Code Execution vulnerability)
+  - Updated @vitejs/plugin-react to 1.3.2 (for Vite 6 compatibility)
+  - Updated lint-staged to 15.5.0 (micromatch ReDoS vulnerability)
+
+### Improved
+
+- Enhanced security posture with patched dependencies
+- Implemented major version updates for Vite and Vitest to address security issues
+- Maintained compatibility with existing configurations
+
 ## [1.0.16] - 2024-06-12
 
 ### Fixed
