@@ -1,5 +1,5 @@
 {
-  "name": "@chama-x/create-chx-app",
+  "name": "create-chx-app",
   "version": "1.0.22",
   "description": "A CLI tool to create a modern React application with a carefully selected tech stack",
   "main": "index.js",
@@ -116,7 +116,7 @@
     "zod"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://registry.npmjs.org/"
   },
   "author": "Chamath Thiwanka",
   "license": "MIT",
