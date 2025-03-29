@@ -1,11 +1,11 @@
 {
-  "name": "create-chx-app",
+  "name": "create-chx-app-secure",
   "version": "1.0.23",
   "description": "A CLI tool to create a modern React application with a carefully selected tech stack",
   "main": "index.js",
   "type": "module",
   "bin": {
-    "create-chx-app": "./index.js"
+    "create-chx-app-secure": "./index.js"
   },
   "scripts": {
     "dev": "vite",
