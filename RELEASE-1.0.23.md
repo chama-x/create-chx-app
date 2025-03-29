@@ -28,4 +28,4 @@ Future releases will continue to focus on improving:
 - Developer experience
 - Template performance
 - Component library expansion
-- Documentation quality 
+- Documentation quality

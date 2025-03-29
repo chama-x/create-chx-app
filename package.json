@@ -122,6 +122,6 @@
   "license": "MIT",
   "files": [
     "index.js",
-    "template"
+    "create-chx-app/template"
   ]
 }
